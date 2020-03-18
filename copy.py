@@ -11,6 +11,10 @@ try:
     for f in files:
         shutil.copy  (FROMDIR +  f, TODIR  + f)
 
+    str = 'abc_de'    
+    l = list(str)
+    print(str[0:l.index('_')])
+
 except:
     print((traceback.print_exc()))
 
